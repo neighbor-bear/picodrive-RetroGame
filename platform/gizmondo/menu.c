@@ -531,7 +531,7 @@ static void draw_savestate_menu(int menu_sel, int is_loading)
 		draw_savestate_bg(menu_sel);
 	menu_draw_begin(1);
 
-	text_out16(tl_x, 30, is_loading ? "Load state" : "Save state");
+	text_out16(tl_x, 30, is_loading ? "加载状态" : "保存状态");
 
 	menu_draw_selection(tl_x - 16, tl_y + menu_sel*10, 108);
 
@@ -539,7 +539,7 @@ static void draw_savestate_menu(int menu_sel, int is_loading)
 	y = tl_y;
 	for (i = 0; i < 10; i++, y+=10)
 	{
-		text_out16(tl_x, y, "SLOT %i (%s)", i, (state_slot_flags & (1 << i)) ? "USED" : "free");
+		text_out16(tl_x, y, "插槽 %i (%s)", i, (state_slot_flags & (1 << i)) ? "USED" : "空白");
 	}
 	text_out16(tl_x, y, "back");
 
