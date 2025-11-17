@@ -65,7 +65,7 @@ struct DrZ80
   unsigned short (*z80_read16)(unsigned short a);
   unsigned int (*z80_rebaseSP)(unsigned short new_sp);
   unsigned int (*z80_rebasePC)(unsigned short new_pc);
-  unsigned int bla;
+  void *internal;
 };
 
 extern int DrZ80Run(struct DrZ80 *pcy,unsigned int cyc);
