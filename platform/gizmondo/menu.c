@@ -1003,7 +1003,7 @@ menu_entry opt_entries[] =
 	{ "Accurate sprites",          MB_ONOFF, MA_OPT_ACC_SPRITES,   &PicoIn.opt, 0x080, 0, 0, 0, 1 },
 	{ "Scanline mode (faster)",    MB_ONOFF, MA_OPT_INTERLACED,    &currentConfig.EmuOpt,  0x4000, 0, 0, 1, 1 },
 	{ "Scale low res mode",        MB_ONOFF, MA_OPT_SCALING,       &currentConfig.scaling, 0x0001, 0, 3, 1, 1 },
-	{ "Show FPS",                  MB_ONOFF, MA_OPT_SHOW_FPS,      &currentConfig.EmuOpt,  0x0002, 0, 0, 1, 1 },
+	{ "显示 FPS",                  MB_ONOFF, MA_OPT_SHOW_FPS,      &currentConfig.EmuOpt,  0x0002, 0, 0, 1, 1 },
 	{ NULL,                        MB_RANGE, MA_OPT_FRAMESKIP,     &currentConfig.Frameskip, 0, -1,  16, 1, 1 },
 	{ "Enable sound",              MB_ONOFF, MA_OPT_ENABLE_SOUND,  &currentConfig.EmuOpt,  0x0004, 0, 0, 1, 1 },
 	{ NULL,                        MB_NONE,  MA_OPT_SOUND_QUALITY, NULL, 0, 0, 0, 1, 1 },
@@ -1598,5 +1598,6 @@ int menu_loop_tray(void)
 		menuErrorMsg[0] = 0; // clear error msg
 	}
 }
+
 
 
