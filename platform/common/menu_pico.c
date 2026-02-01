@@ -1080,7 +1080,7 @@ static const char h_confirm_save[]    = "Ask for confirmation when overwriting s
 
 static menu_entry e_menu_ui_options[] =
 {
-	mee_onoff     ("Show FPS",                 MA_OPT_SHOW_FPS,       currentConfig.EmuOpt, EOPT_SHOW_FPS),
+	mee_onoff     ("显示 FPS",                 MA_OPT_SHOW_FPS,       currentConfig.EmuOpt, EOPT_SHOW_FPS),
 	mee_enum_h    ("Confirm save/load",        MA_OPT_CONFIRM_STATES, currentConfig.confirm_save, men_confirm_save, h_confirm_save),
 	mee_onoff     ("Don't save last used game", MA_OPT2_NO_LAST_ROM,  currentConfig.EmuOpt, EOPT_NO_AUTOSVCFG),
 	mee_end,
